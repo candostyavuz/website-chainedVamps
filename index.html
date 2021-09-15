@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery.nice-number.css">
+    <script src="https://kit.fontawesome.com/8a5b4b9377.js" crossorigin="anonymous"></script>
+    <link href="jquery.nice-number.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="jquery.nice-number.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+
+            $('input[type="number"]').niceNumber();
+
+        });
+    </script>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">CHAINED VAMPIRES</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="#mint"> Mint</a></li>
+                    <li><a href="#about"> About</a></li>
+                    <li><a href="inventory.html"> Inventory</a></li>
+                    <li><a href="marketplace.html"> Marketplace</a></li>
+                    <span class="claim">
+                        REWARDS :
+                        0
+                        <a class="claimb" href="index.html">
+                        CLAIM
+                        </a>
+                    </span>
+                </ul>
+            </div>
+
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1> BRINGING ORIGINAL <br> VAMPIRE LEGION TO <br> AVAX COMMUNITY</h1>
+            <a href="#" class="hero-btn">Switch to Avalanche</a>
+        </div>
+
+    </section>
+
+
+    <section class="mint-items" id="mint">
+        <img src="img/gif.gif">
+        <div class="mt-text">
+            <h1>0/10,000 <br>
+                VAMP MINTED</h1>
+        </div>
+
+        <div class="mt-box">
+
+            <div class="mt-boxA">
+                <input type="number" value="1">
+            </div>
+
+            <div class="vampbutton">
+                <a href="index.html">
+                    <span>SUMMON</span>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+    
+
+    <section class="course" id="about">
+        <h1> About Chained Vampires </h1>
+        <p>
+            Chained Vampires are ERC-721 NFT's which returns dividends to their owners!
+            Only 9999 vampires available which each of them is generated randomly with Computer Program.
+            Each vampire has unique apperance, attributes, race and rarity.
+        </p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>TOKENOMICS</h3>
+                <p> 
+                    Reflectionary minting system returns vampire holders a portion from minting fees, all in $AVAX! </p>
+                <p> This means that 10% of every minting fee is reflected back to existing holders and can be
+                    claimed at any time! </p>
+            </div>
+
+            <div class="course-col">
+                <h3>RARITY RANKING</h3>
+                <p>  Dracula: 0.01% </p>
+                <p>  Draxo:   0.18% </p>    
+                <p>  Elder (Tier-0):  2.3%</p>    
+                <p>  Nosferatu (Tier-1): 13.6%</p>    
+                <p>  Predator (Tier-2): 39.1%</p>    
+                <p>  Scavanger (Tier-3): 44.81% </p>    
+            </div>
+
+            <div class="course-col">
+                <h3>ROADMAP</h3>
+                <p> 25% Minted
+                    AVAX giveaway! We will be randomly giving away $AVAX to Chained Vamopires members exclusively!
+                    This is the first phase of the project which aims distributing unique vampires to players.
+                    Second phase of the game will focus on advanced tokenomics and DeFi integrations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="campus">
+
+        <h1> Races and Tiers </h1>
+        <p> In this legion, all vampires are most welcomed regardless of their type! </p>
+        <p> Still, some vampires have more unique attributes and draining power than others. </p>
+        <p> Races are as follows according to most common to rarest. </p>
+        <div class="row1">
+
+            <div class="campus-col">
+                <div class="layer">
+                    <img src="img/63.png">
+                    <h3>Scavanger (Tier-3)</h3>
+                </div>
+            </div>
+            
+            <div class="campus-col">
+                <div class="layer">
+                    <img src="img/62.png">
+                    <h3>Hunter (Tier-3)</h3>
+                </div>
+            </div>
+            
+            <div class="campus-col">
+                <div class="layer">
+                    <img src="img/7.png">
+                    <h3>Predator (Tier-2)</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <div class="layer">
+                    <img src="img/3.png">
+                    <h3>Nosferatu (Tier-1)</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <div class="layer">
+                    <img src="img/18.png">
+                    <h3>Elder (Tier-0)</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <div class="layer">
+                    <img src="img/v2.jpg">
+                    <h3>Draxo</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+
+
+        /*number button*/
+
+        const numbers = document.getElementById('box');
+
+        for (let i = 0; i < 21; i++) {
+            const span = document.createElement('span');
+            span.textContent = i;
+            numbers.appendChild(span);
+        }
+
+        const num = numbers.getElementsByTagName('span');
+        let index = 0;
+
+        const nextNum = () => {
+            num[index].style.display = 'none';
+            index = (index + 1) % num.length;
+            num[index].style.display = 'initial';
+        };
+
+        const prevNum = () => {
+            num[index].style.display = 'none';
+            index = (index - 1 + num.length) % num.length;
+            num[index].style.display = 'initial';
+        };
+    </script>
+</body>
+
+</html>
